@@ -1,0 +1,88 @@
+:root{
+    --blue:#3440AE;
+    --red: rgba(237, 111, 156, 1);
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(244.64deg, var(--blue) 0%, rgba(159, 167, 241, 0) 40.32%);
+    font-family: "IBM Plex Sans Arabic", serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+header{
+    justify-content: space-between;
+}
+ul {
+    list-style: none;
+    gap: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+main .info{
+    width: 50%;
+}
+.red-title{
+    color: var(--red);
+    font-weight: 700;
+    line-height: 29px;
+}
+main h2{
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0;
+}
+.normal-title{
+    font-weight: 600;
+    line-height: 29px
+}
+.btn-parent{
+    gap: 35px;
+    margin-top: 50px;
+}
+button{
+    width: 167px;
+    height: 69px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid var(--blue);
+    font-weight: 600;
+    line-height: 29.05px;
+    cursor: pointer;
+}
+.daftar{
+    background-color: var(--blue);
+    color: white;
+}
+.daftar:hover{
+    background-color: #26308d
+}
+.login{
+    background-color: white;
+    color: var(--blue);
+}
+.login:hover{
+    background-color: #eeeeee
+}
+/* refactor */
+header , ul , main ,.btn-parent{
+    display: flex
+}
+ul li a,.red-title,.normal-title,button{
+    font-size: 24px;
+}
